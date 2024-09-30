@@ -1,0 +1,443 @@
+ *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color:#000;
+    color: #fff;
+}
+.container{
+    padding: 30px 80px 30px 80px;
+}
+.head { 
+    background-image: url(image/background\ \(1\)\ -\ Copy.jpg);
+    border-image-width: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    width: 100vw;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(330px,1fr)); */
+}
+.logo{
+    
+}
+.logo img{
+    width:  100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 40px;
+    margin: 30px 130px;
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+.navbar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #02ff3d;
+    border-radius: 5px;
+    transform-origin:right;
+    transform: scaleX(0);
+    transition: transform.5s;
+}
+.navbar a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.contact-me{
+    cursor: pointer;
+    padding: 10px;
+    background: transparent;
+    outline: none;
+    border-radius: 20px ;
+    border: 2px solid #02ff3d;
+    color: #02ff3d;
+    font-weight: 900;
+}
+/* Home */
+.home{
+    color: #fff;
+    margin: 130px 0 0 120px;
+}
+.home p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.home h1{
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.home h1 span{
+    color: #02ff3d;
+}
+.home ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+    cursor: pointer;
+}
+.home div ul li a i{
+    color: #ababab;
+}
+.mabout-me{
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    /* background: transparent; */
+    outline: none;
+    border-radius: 20px ;
+    /* border: 2px solid #02ff3d; */
+    color: #fff;
+    background-color: #02ff3d;
+    font-weight: 900;
+}
+.mabout-me:hover{
+    color: #02ff3d;
+    background-color: #fff;
+}
+/* ---about------ */
+.about{
+    display: flex;
+    color: #fff;
+    margin-top: 40px;
+    gap: 60px;
+    
+}
+.col-1{
+    /* flex-basis: 45%; */
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+.col-1 img{
+    width:300px;
+    border-radius: 20px;
+}.about-me{
+    /* flex-basis: 50%; */
+}
+.about-me h1{
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-link{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+.tab-link::after{
+    content: '';
+    width: 0;
+    height:3px ;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-link:hover::after{
+    transform-origin: left;
+   
+    width: 100%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #02ff3d;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/* --------------------service---------------- */
+.row{
+    display: flex;
+    flex-direction:row;
+}
+
+.sercvice-list{
+    /* padding: 0  130px 0 0; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,2fr));
+    gap: 30px;
+    margin-top: 50px; 
+}
+.sercvice-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: 0.5s, transform 0.5s ;
+}
+.sercvice-list div i{
+    font-size:50px ;
+    margin-bottom: 30px;
+}
+.sercvice-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.sercvice-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.sercvice-list div a:hover{
+    text-decoration: underline;
+}
+.sercvice-list div:hover{
+    background: #ff004f;
+    transform: translatey(-10px);
+}
+/* ------ my work----- */
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.work img{
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),#ff004f);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    transition: hight 0.5s;
+}
+.layer i{
+    color: #ff004f;
+    background: #fff;
+    padding: 10px;
+    border-radius: 100%;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.see-more{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.see-more:hover{
+    background: #ff004f;
+}
+/* =========Contact========== */
+.contact-left{
+    flex-basis: 40%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    padding-right: 10px;
+    font-size: 25px;
+}
+.social i{
+    margin: 30px 13px 30px 0;
+    color: #ababab;
+    font-size: 30px;
+}
+.social i:hover{
+    color: #ff004f;
+    transform: translatey(-5px);
+}
+.cv{
+    background: #ff004f;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .cv{
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 20%;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction:column;
+}
+.copy-right{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    background: #262626;
+    font-weight: 300;
+}
+/* ======Responsive====== */
+
+@media  screen and (max-width:600px){
+    .head{
+        background-image: url(image/pexels-photo-1553783.webp);
+        background-size: cover;
+        background-position:  center;
+    height: 100vh;
+    width: 100vw;
+    }
+    .navbar,.interduction,.home div{
+        display: none;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .container{
+        padding: 30px ;
+    }
+    .home{
+        margin-top: 100%;        
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    form .cv{
+        width: 100%;
+    }
+}
+@media  screen and (max-width:320px) {
+    .col-1 img{
+        width: 260px;
+    }
+    .tab-link{
+        margin-right: 25px;
+    }
+}
+@media  screen and (min-width:320px) and (max-width:375px){
+    .logo{
+        /* margin: 0 137px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .home{
+        /* margin: 200px 20px 0px 20px; */
+    }
+    .col-1 img{
+        width: 260px;
+    }
+    .tab-link{
+        margin-right: 25px;
+    }
+    .home{
+        margin: 100px 10px 0 10px;
+    }
+}
+@media  screen and (min-width:375px) and (max-width:425px){
+    .logo img{
+        margin: 0 ;
+    }
+    .container{
+        padding: 55px ;
+    }
+    .tab-link{
+        margin-right: 25px;
+    }
+}
+@media  screen and (min-width:425px) and (max-width:768px){
+    .about{
+        flex-direction: column;
+    }
+   .navbar ul{
+    width: auto;
+    padding: auto;
+    margin: 0;
+   }
+}
+ 
+
+ 

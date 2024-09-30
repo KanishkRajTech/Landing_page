@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--  -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- css finle -->
+    <link rel="stylesheet" href="style.css">
+    <!--font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="head" >
+        <header>
+            <div class="logo">
+                <img src="image/f155a6ab-f2ce-4b1c-ae01-644ee6a7be5c-removebg-preview.png" alt="">
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#my-work">My Work</a></li>
+                    <button class="contact-me">Contact Me</button>
+                </ul>
+            </div>
+            <!-- <div class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">My Work</a></li>
+                <button class="contact-me ">Contact Me</button>
+            </div> -->
+        </header>
+        <!-- home -->
+        <section class="home" id="home">
+           
+            <p>Hi, There!</p>
+            <h1>I Am <span class="input"></span></h1>
+            <p class="interduction">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Dolorem dolore accusantium consequatur reiciendis </p>
+            <div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-youtube fa-xl"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                    </li>
+                    
+                </ul>
+                
+                <button class="mabout-me">More About Me</button>
+            </div>
+         
+        </section>
+    </section>
+</section>
+    <!-- --------------About---------------- -->
+    <section class="about container" id="about" >
+        <div class="col-1">
+            <img src="image/pexels-khalifa-waleed-761115.jpg" alt="">
+        </div>
+        <div class="about-me">
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi  quidem reiciendis fuga, cum inventore nisi ullam Lorem ipsum dolor sit amet consectetur  adipisicing elit. Aut dolorum nesciunt, quae numquam sit dicta. Dolores, aut totam. Odio rerum nobis provident atque corrupti at cum perspiciatis numquam nisi consequuntur?</p>
+            <div class="tab-titles">
+                <p class="tab-link active-link" onmouseover="opentab('Skills')">Skills</p>
+                <p class="tab-link" onmouseover="opentab('Experience')">Experience</p>
+                <p class="tab-link"  onmouseover="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing Web interface</li>
+                    <li><span>Web Devlopment</span><br>Web app Developer</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+                <ul>
+                    <li><span>2021 - Current</span><br>UI/UX Design Trnining at ET Institute</li>
+                    <li><span>2019-2012</span><br>Team lead at LIC</li>
+                    <li><span>2018-2019</span><br>Internship at ekart eComerce</li>
+            </div>
+            <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>2022</span><br>MTech From Jadavpur University</li>
+                    <li><span>2018</span><br>BTech From Jadavpur University</li>
+                    <li><span>2017</span><br>UI/UX Design Training at PWskills</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- -------our Service-------- -->
+    <div id="service"  >
+        <div class="container">
+            <h1>My Service</h1>
+            <div class="sercvice-list">
+                <div>
+                   <i class="fa-solid fa-code fa-2xl"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, consectetur.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code fa-2xl"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, consectetur.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code fa-2xl"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, consectetur.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  My Work-->
+    <div class="portfolia" id="my-work" >
+        <div class="container">
+            <h1>My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, at?</p>
+                        <a href="#">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div> 
+                </div>
+                <div class="work">
+                    <img src="image/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Movie App</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, placeat!</p>
+                        <a href="#">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div> 
+                </div>
+                <div class="work">
+                    <img src="image/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Shoping App</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, modi!</p>
+                        <a href="#">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>  
+                </div>
+            </div>
+            <a href="#" class="see-more">See More</a>
+        </div>     
+    </div>
+   <!-- ---------contact me----------- -->
+   <div id="contact" class="contact">
+    <div class="container contact-box">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>krwebsolutios@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone-volume"></i>0123456789</p>
+                <div class="social">
+                    <a href=""> <i class="fa-brands fa-facebook"></i> </a> 
+                    <a href=""> <i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"> <i class="fa-brands fa-linkedin"></i> </a>
+                    <a href="#"> </a>
+                </div>
+                <button class="cv">Download CV</button>
+            </div>
+            <div class="contact-right">
+                <form >
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" cols="6" placeholder="Your Message" required ></textarea>
+                    <button class="cv">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <p>Copyright @ Portfolia Made with K.R. Web Solutios</p>
+    </div>
+   </div>
+
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('.input', {
+        strings: ['Kanishk Raj.', 'Fullstack Web Developer.'],
+        typeSpeed: 50,
+        backSpeed:60,
+        loop:true
+    });
+
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents =document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+        
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+
+            
+            document.getElementById(tabname).classList.add("active-tab")
+         
+        }
+        
+    </script>
+</body>
+</html>
